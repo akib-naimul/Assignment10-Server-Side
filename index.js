@@ -38,7 +38,7 @@ async function run() {
 
     console.log(`✅ Connected to MongoDB database: ${dbName}`);
 
-    // ----- Seed initial listings (only once) -----
+    
     const count = await listingsCollection.estimatedDocumentCount();
     if (count === 0) {
       const sampleListings = [
