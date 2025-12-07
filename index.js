@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 // ---------- Middlewares ----------
 app.use(
   cors({
-    // ✅ Allow any origin during development (this fixes 5173/5174 issues)
+    // 
     origin: true,
     credentials: true,
   })
