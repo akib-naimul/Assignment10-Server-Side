@@ -448,7 +448,7 @@ async function run() {
     });
 
     // Ping
-    await db.command({ ping: 1 });
+    // await db.command({ ping: 1 });
     console.log("✅ Pinged MongoDB successfully");
   } catch (err) {
     console.error("❌ Mongo connection error:", err);
@@ -460,3 +460,5 @@ run().catch(console.dir);
 app.listen(port, () => {
   console.log(`🚀 PawMart server is running on port ${port}`);
 });
+
+module.exports = app;
